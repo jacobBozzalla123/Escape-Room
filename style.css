@@ -1,0 +1,362 @@
+/* https://www.w3docs.com/snippets/css/how-to-import-google-fonts-in-css-file.html#:~:text=Open%20Google%20Fonts%20and%20follow,(in%20HTML%20or%20CSS) */
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+
+/* rulesets that affect specific HTML element tags */
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: block;
+  background-image: url("images/background.png");
+  overflow: hidden;
+}
+
+.startmodal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  opacity: 0.8;
+}
+
+.startmodal-content {
+  width: 90%;
+  height: 90%;
+  background-image: url("images/fixedinstructions.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  opacity: 1;
+  margin: 0;
+}
+input {
+  font-size: 40px;
+  font-family: "Courier New", monospace;
+  padding: 14px 20px;
+}
+/* only the text 'input' elements */
+input[type="text"] {
+  color: grey;
+  border: none;
+  width: 150%;
+  margin: 8px;
+  margin-left: -75px;
+}
+/* only the text 'submit' element */
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+input[type="submit"] {
+  margin-left: 35px;
+  cursor: pointer;
+}
+.text {
+  font-family: "Gloria", monospace;
+  align-content: left;
+  margin: 8px 0em 0em 8px;
+  color: rgb(0, 0, 0);
+}
+
+.text2 {
+  font-family: "Gloria", monospace;
+  align-content: center;
+  margin: 0.5em 0em 0em 20px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 20px;
+}
+.text3 {
+  font-family: "Gloria", monospace;
+  align-content: center;
+  margin: 4em 0em 0em 0em;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 50px;
+}
+.text4 {
+  font-family: "Gloria", monospace;
+  align-content: center;
+  margin: -4em 0em 0em 0em;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 50px;
+}
+
+img {
+  height: 50%;
+  width: 50%;
+}
+
+.opaque {
+  opacity: 75%;
+}
+.opaque2 {
+  opacity: 0%;
+}
+.hide {
+  display: none;
+}
+.big {
+  height: 100%;
+  width: 100%;
+}
+.big2 {
+  height: 100%;
+  width: 50%;
+}
+
+/* rulesets that affect only elements using 'class=' */
+.xlrow {
+  height: 75%;
+  width: 100%;
+  display: flex;
+}
+.row {
+  height: 25%;
+  width: 100%;
+  display: block;
+}
+.lrow {
+  height: 100%;
+  width: 70%;
+  display: block;
+}
+.srow {
+  height: 50%;
+  width: 100%;
+  display: flex;
+}
+.xsrow {
+  height: 50%;
+  width: 100%;
+  display: flex;
+}
+.column {
+  height: 100%;
+  width: 30%;
+}
+.column2 {
+  display: flex;
+  height: 100%;
+  width: 30%;
+}
+.box {
+  height: 100%;
+  width: calc(100% / 3);
+}
+.box2 {
+  margin-top: -60px;
+  margin-left: 337px;
+  height: 80%;
+  width: 10%;
+}
+.box3 {
+  margin-left: 40px;
+  margin-top: -25px;
+  height: 60%;
+  width: 48%;
+}
+.box4 {
+  margin-top: 550px;
+  margin-left: 250px;
+  height: 17%;
+  width: 20%;
+}
+.box5 {
+  margin-left: 75px;
+  margin-top: 200px;
+  height: 20%;
+  width: 5%;
+}
+.box6 {
+  margin-top: 20%;
+  margin-left: 80%;
+  height: 105px;
+  width: 210px;
+}
+.modalcolumns {
+  height: 100%;
+  width: calc(100% / 4);
+}
+.modalcolumnl {
+  height: 100%;
+  width: calc(100% / 2);
+  display: block;
+}
+.modalrow {
+  height: calc(100% / 3);
+  width: 100%;
+  display: block;
+}
+.modalbox {
+  height: 25%;
+  width: 25%;
+}
+.modalbox2 {
+  height: 20%;
+  width: 40%;
+}
+.modalbox3 {
+  height: 80%;
+  width: 100%;
+  display: block;
+}
+.modalbox4 {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+.modalrows {
+  height: 50%;
+  width: 100%;
+  display: block;
+}
+.tallbox {
+  margin-left: -15px;
+  height: 34%;
+  width: 175px;
+  margin-top: 66%;
+}
+.filler {
+  height: 100%;
+  width: 40%;
+}
+.desk {
+  margin-top: -90px;
+  margin-left: 225px;
+  height: 25%;
+  width: 20%;
+}
+.desk2 {
+  margin-top: -100px;
+  height: 100%;
+  width: 20%;
+}
+.center-content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.opaque {
+  opacity: 0.5;
+}
+
+.clickable:hover {
+  cursor: pointer;
+}
+.clickable:active {
+  cursor: pointer;
+  transform: scale(1.05, 1.05);
+}
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: #1c1c1c;
+  opacity: 1;
+}
+.modal2 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+
+  opacity: 1;
+}
+
+/* Don't cover the entire screen */
+.modal-content {
+  width: 80%;
+  height: 70%;
+  opacity: 1;
+  margin: 0;
+}
+.modal-content2 {
+  width: 95%;
+  height: 90%;
+  background-color: black;
+  opacity: 1;
+  margin: 0;
+}
+.modal-content3 {
+  background-image: url("images/hall.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 1;
+  margin: 0;
+}
+.close {
+  color: #aaaaaa;
+  position: fixed;
+  top: 1%;
+  right: 1%;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* colors */
+.green {
+  background-color: #008d24;
+}
+.light_blue {
+  background-color: #00eeff;
+}
+.blue {
+  background-color: blue;
+}
+.purple {
+  background-color: #3a246d;
+}
+.red {
+  background-color: #ca1b22;
+}
+.orange {
+  background-color: #ea6626;
+}
+.yellow {
+  background-color: yellow;
+}
+.purple {
+  background-color: #3a246d;
+}
+.pink {
+  background-color: pink;
+}
+.black {
+  background-color: #000000;
+}
+.white {
+  background-color: #ffffff;
+}
+.light-grey {
+  background-color: #a9a9a9;
+}
+.dark-grey {
+  background-color: #707070;
+}
+.none {
+  display: none;
+}
