@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Room 5 Escape Room</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="">
+   
+    <div class="xlrow   ">
+      <div class="lrow  ">
+        <div class="srow  ">
+          <div class="box6 light-grey hide opaque " id="text"> 
+            <p class="text"> This looks like some kind of code. Searching the desks might help solve it, then try the door.
+            </p>
+          </div>
+        </div>
+        <div class="srow ">
+          <div class="box2 ">
+            <img src="images/monster.png" class=" big hide " id="monster" onclick="scare()"/> </div>
+            <div class="box5 ">
+              <img src="images/code.png"class="hide big"  id="note"/>
+            </div>
+          <div class="box3  clickable center-content"  id="board" onclick="board()">
+            <img src="images/fixedbetterphrase.png" class=""/>
+          </div>
+        </div>
+      </div>
+      <div class="column2   ">
+        <div class="tallbox clickable" id="door1" onclick="showModal2()"></div>
+        <div class="tallbox clickable hide  " id="door2" onclick="showModal3()"></div>
+        <div class="box4 " >
+          <img src="images/2fixednote.png" class="hide big" id="cipher" onclick="showModal()"/>
+        </div>
+      </div>
+    </div>
+    <div class="row  ">
+      <div class="xsrow ">
+        <div class="desk  clickable" id="desk" onclick="note()">
+        </div>
+        <div class="box "></div>
+        <div class="box "></div>
+      </div>
+      <div class="xsrow ">
+        <div class="filler ">
+        </div>
+        <div class="filler "></div>
+        <div class="desk2 clickable" id="desk2" onclick="cipher()"></div>
+      </div>
+      
+      <div class="modal2 center-content " id="myModal">
+        <!-- this is the "X" button to close the modal -->
+        <span class="close" style="font-size: 50px" onclick="hideModal()"
+          >&times;</span  
+        > 
+        <!-- this is a new blank canvas for you to build -->
+        <div class="modal-content center-content">
+          <!-- the content of your modal pop-up! -->
+          <img src="images/2fixednote.png"class="big2" />
+      </div>
+    </div>
+    <div class="modal center-content " id="myModal2">
+      <!-- this is the "X" button to close the modal -->
+      <span class="close" style="font-size: 50px" onclick="hideModal2()"
+        >&times;</span  
+      > 
+      <!-- this is a new blank canvas for you to build -->
+      <div class="modal-content2 center-content">
+        <!-- the content of your modal pop-up! -->
+        <div class="modalcolumns center-content ">
+          <div class="modalbox2 light-grey ">
+            <p class="text2"> Enter the codeword to unlock the cipher. Make sure you find both clues.
+          </div>
+        </div>
+        <div class="modalcolumnl ">
+          <div class="modalrow  center-content ">
+            <img src="images/fixedbetterphrase.png" id="phrase" class="opaque2"/>
+          </div>
+          <div class="modalrow  center-content ">
+            <div class="modalbox center ">
+              <input type="text" id="answer1" class="" />
+      <input type="submit" value="Submit" id="Submit" class="" onclick="checkInput()" />
+      <input type="text" id="answer2" class="opaque2" />
+      <input type="submit" value="Submit" id="Submit2" class="opaque2" onclick="checkInput2()" />
+      
+            </div>
+          </div>
+          <div class="modalrow ">
+            <div class="modalbox3   ">
+              <div class="modalrows light-grey center-content opaque2 " id="subciph">
+                <p class="text3"> CLINTABDEFGHJKMOPQRSUVWXYZ
+              </div>
+              <div class="modalrows dark-grey center-content opaque2 " id="subciph2">
+                <p class="text4"> ABCDEFGHIJKLMNOPQRSTUVWXYZ
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modalcolumns "></div>
+    </div>
+  </div>
+  <div class="modal center-content " id="myModal3">
+    <!-- this is the "X" button to close the modal -->
+    
+     
+    <!-- this is a new blank canvas for you to build -->
+    <div class="modal-content3 center-content">
+      <!-- the content of your modal pop-up! -->
+      <div class="modalbox3 center-content clickable " onclick="exit()">
+        <img src="images/text.png" />
+      </div>
+  </div>
+</div>
+  <div class="startmodal center-content" id="intro">
+    <span class="close" style="font-size: 50px" onclick="hideStartModal()">&times;</span>
+    <div class="startmodal-content center-content"></div>
+   
+  </div>
+  <audio src="sounds/2024-11-06 17-32-49.mkv" id="scare"></audio>
+    <script src="script.js"></script>
+    <script src="preload.js"></script>
+  </body>
+</html>
