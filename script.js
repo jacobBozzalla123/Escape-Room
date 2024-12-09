@@ -25,6 +25,7 @@ function startModal() {
 function hideStartModal() {
   document.getElementById("intro").style.display = "none";
   hideModal2();
+  document.getElementById("music").play();
 }
 function cipher() {
   i2.classList.remove("hide");
@@ -101,6 +102,7 @@ function checkInput2() {
     document.getElementById("scare").play();
     hideModal2();
     i1.classList.remove("hide");
+    document.getElementById("music").pause();
   }
   input_div.value = "";
 }
