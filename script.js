@@ -12,7 +12,7 @@ d1 = document.getElementById("door1");
 d2 = document.getElementById("door2");
 
 function exit() {
-  window.location.href = "https://dyrxck.csb.app/";
+  window.location.href = "https://lilpoisonberry.github.io/Escape-Room-Game/";
 }
 window.onload = function () {
   startModal();
